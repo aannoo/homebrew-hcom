@@ -1,25 +1,25 @@
 class Hcom < Formula
   desc "Connect Claude Code, Gemini CLI, and Codex so agents can message, watch, and spawn each other across terminals"
   homepage "https://github.com/aannoo/hcom"
-  version "0.7.9"
+  version "0.7.10"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/aannoo/hcom/releases/download/v0.7.9/hcom-aarch64-apple-darwin.tar.gz"
-      sha256 "6ab4a6b66bb5da0d1dee5fa724db2bb979c342a80301a953cdf615981d6a3e8a"
+      url "https://github.com/aannoo/hcom/releases/download/v0.7.10/hcom-aarch64-apple-darwin.tar.gz"
+      sha256 "cf37f95e248cbca04ba8aaa6448fd35b5ab9e062c41d035ad4ad37be3f7d7550"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/aannoo/hcom/releases/download/v0.7.9/hcom-x86_64-apple-darwin.tar.gz"
-      sha256 "d0801c749a0eabbd265104d356412a99cbe45829cc2053b63e115477a730c1a2"
+      url "https://github.com/aannoo/hcom/releases/download/v0.7.10/hcom-x86_64-apple-darwin.tar.gz"
+      sha256 "348110bc2f0a80d29567fb35c71f3650bb6a4f75536f6e3e206e4816712e61d2"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/aannoo/hcom/releases/download/v0.7.9/hcom-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "69b0f6d906bb73459ca08f79b69f9bfa741829ca4a7d6071bbeccd232674280e"
+      url "https://github.com/aannoo/hcom/releases/download/v0.7.10/hcom-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "8349ceb0d2f6a92b6f044c9f328d138db403aed0c3c5affae3f47504168fc550"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/aannoo/hcom/releases/download/v0.7.9/hcom-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "8f2a2d0dd3e0828555d25c617a09265bde7e86f168095ce2b1bbc80c40b8519d"
+      url "https://github.com/aannoo/hcom/releases/download/v0.7.10/hcom-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "f4600d8e4216f7ffcc4e8ecd82fddefe8819e8dafb29c12e27dc52813642b67b"
     end
   end
   license "MIT"
