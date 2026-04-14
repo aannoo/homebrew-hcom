@@ -1,25 +1,25 @@
 class Hcom < Formula
-  desc "Connect Claude Code, Gemini CLI, and Codex so agents can message, watch, and spawn each other across terminals"
+  desc "Connect Claude Code, Gemini CLI, Codex, and OpenCode so agents can message, watch, and spawn each other across terminals"
   homepage "https://github.com/aannoo/hcom"
-  version "0.7.10"
+  version "0.7.11"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/aannoo/hcom/releases/download/v0.7.10/hcom-aarch64-apple-darwin.tar.gz"
-      sha256 "cf37f95e248cbca04ba8aaa6448fd35b5ab9e062c41d035ad4ad37be3f7d7550"
+      url "https://github.com/aannoo/hcom/releases/download/v0.7.11/hcom-aarch64-apple-darwin.tar.gz"
+      sha256 "b923e3c9340957315ddeeb40d727eb289f468e244770d671ff7ae1466084bf53"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/aannoo/hcom/releases/download/v0.7.10/hcom-x86_64-apple-darwin.tar.gz"
-      sha256 "348110bc2f0a80d29567fb35c71f3650bb6a4f75536f6e3e206e4816712e61d2"
+      url "https://github.com/aannoo/hcom/releases/download/v0.7.11/hcom-x86_64-apple-darwin.tar.gz"
+      sha256 "d77aa7f68d46ddc75ddba82ffa083c07218df614b440c73038bfd582de804d7b"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/aannoo/hcom/releases/download/v0.7.10/hcom-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "8349ceb0d2f6a92b6f044c9f328d138db403aed0c3c5affae3f47504168fc550"
+      url "https://github.com/aannoo/hcom/releases/download/v0.7.11/hcom-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "df90780d310508d6d8d23e7580c4ef2101e29b74038aa02399b6133dcee06521"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/aannoo/hcom/releases/download/v0.7.10/hcom-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "f4600d8e4216f7ffcc4e8ecd82fddefe8819e8dafb29c12e27dc52813642b67b"
+      url "https://github.com/aannoo/hcom/releases/download/v0.7.11/hcom-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "d318472a1caa3aa82dab37c40e45f8f3fdae338973f6185baf87ea16f4f3c104"
     end
   end
   license "MIT"
