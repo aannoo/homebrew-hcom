@@ -5,21 +5,21 @@ class Hcom < Formula
   if OS.mac?
     if Hardware::CPU.arm?
       url "https://github.com/aannoo/hcom/releases/download/v0.7.14/hcom-aarch64-apple-darwin.tar.gz"
-      sha256 "c48dc8fb54a994c6263d57f7f82fef93401c96f0a633949d68be20d756fa5730"
+      sha256 "0f48ca055b1b3b7e2d8a18c7a774750ee7e14df220d564b53d08c2b57a5a53be"
     end
     if Hardware::CPU.intel?
       url "https://github.com/aannoo/hcom/releases/download/v0.7.14/hcom-x86_64-apple-darwin.tar.gz"
-      sha256 "1666b4a4814f5145f9c1efe260527e6a7c95394f519f6a6370bc05f27df613c3"
+      sha256 "54c1e1b798496f8ea4c9470a813c5f57ad4ab7ad30619b9d09fe9d8d911680d9"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
       url "https://github.com/aannoo/hcom/releases/download/v0.7.14/hcom-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "6c3388b8bbf0615897c5611ddb7687996c5fb2b941b874fb2f5b1e565085c7b2"
+      sha256 "c5535392305e8e00fe7867aa091d9d10142e5900d763cd7b29e067c159443a2b"
     end
     if Hardware::CPU.intel?
       url "https://github.com/aannoo/hcom/releases/download/v0.7.14/hcom-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "9189ac23e676cd1657675abf0f99f9e11315d0d5a5156cbd1920fbb04d73b169"
+      sha256 "ea3630f434c5e9c3f16b98e842ad48bdbac563cea181ec5b0db8e60ac9f3c8b5"
     end
   end
   license "MIT"
