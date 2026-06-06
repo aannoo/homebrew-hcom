@@ -1,25 +1,25 @@
 class Hcom < Formula
-  desc "Connect Claude Code, Gemini CLI, Codex, OpenCode, and Kilo Code so agents can message, watch, and spawn each other across terminals"
+  desc "Connect Claude Code, Gemini CLI, Codex, OpenCode, Kilo Code, Pi, Antigravity, Cursor, Kimi, and Copilot so agents can message, watch, and spawn each other across terminals"
   homepage "https://github.com/aannoo/hcom"
-  version "0.7.20"
+  version "0.7.21"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/aannoo/hcom/releases/download/v0.7.20/hcom-aarch64-apple-darwin.tar.gz"
-      sha256 "3c27fe6d649d78d64cea956808f19ffdcbbcc5cacc751511fe1825069d4d06f2"
+      url "https://github.com/aannoo/hcom/releases/download/v0.7.21/hcom-aarch64-apple-darwin.tar.gz"
+      sha256 "284d5cffd0606ea3ccc8ec35e7f09fd38bdf42686491c975f012de94ab09c2fc"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/aannoo/hcom/releases/download/v0.7.20/hcom-x86_64-apple-darwin.tar.gz"
-      sha256 "538b0cecce37663b3c8cd49a03b8ec63f24e09d0d6030e4901d239748242c57a"
+      url "https://github.com/aannoo/hcom/releases/download/v0.7.21/hcom-x86_64-apple-darwin.tar.gz"
+      sha256 "add048c5f4b964f20fb9527869ca9fbc836f7b386520eeee34c81db91374640e"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/aannoo/hcom/releases/download/v0.7.20/hcom-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "6699e256c17873e20eb6607b2d7df9b646bfb5284ca8efa1e3d744fcbce72be7"
+      url "https://github.com/aannoo/hcom/releases/download/v0.7.21/hcom-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "9b8e70d35c9195484895a287fa142963ba2d809b64e0add3e6c9f51a9fc09eb2"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/aannoo/hcom/releases/download/v0.7.20/hcom-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "5d64c87dc6ff145533f60bd851d15a0a1bc6c671004f0472704065b860580d46"
+      url "https://github.com/aannoo/hcom/releases/download/v0.7.21/hcom-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "84a3e7ebd7ac5fa5ede93918ebf5e5190c55f1a4cebd80f68c8729e393569a38"
     end
   end
   license "MIT"
