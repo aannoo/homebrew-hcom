@@ -1,25 +1,25 @@
 class Hcom < Formula
-  desc "Connect Claude Code, Gemini CLI, Codex, OpenCode, Kilo Code, Pi, Antigravity, Cursor, Kimi, and Copilot so agents can message, watch, and spawn each other across terminals"
+  desc "Connect Claude Code, Gemini CLI, Codex, OpenCode, Kilo Code, Pi, Oh My Pi, Antigravity, Cursor, Kimi, and Copilot so agents can message, watch, and spawn each other across terminals"
   homepage "https://github.com/aannoo/hcom"
-  version "0.7.22"
+  version "0.7.23"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/aannoo/hcom/releases/download/v0.7.22/hcom-aarch64-apple-darwin.tar.gz"
-      sha256 "f1836c9bd2102e3ee59ef6215ca16be87e55b3ebb104fc6406a04487864c3b1d"
+      url "https://github.com/aannoo/hcom/releases/download/v0.7.23/hcom-aarch64-apple-darwin.tar.gz"
+      sha256 "14befb09ddfe6b835c7509a9ed2a7d4bc0df2b95d90ab8cf8b4169415d6db26e"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/aannoo/hcom/releases/download/v0.7.22/hcom-x86_64-apple-darwin.tar.gz"
-      sha256 "68296ef64c73fd2ea345e2190c0fb62d9877ce138be7c502dde000debbbc6f39"
+      url "https://github.com/aannoo/hcom/releases/download/v0.7.23/hcom-x86_64-apple-darwin.tar.gz"
+      sha256 "d0e23cfc1d73316cc49566ebb1ae6f4ebb28a05c2a1d70f9f073ae781466f7e0"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/aannoo/hcom/releases/download/v0.7.22/hcom-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "138297f9034e99dc0a45123ef2f2d28287c91d07c763ea268f3892f78795351a"
+      url "https://github.com/aannoo/hcom/releases/download/v0.7.23/hcom-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "464bfa3c523b1dafe480180436b2fbab13dc92d8b0fe6c0296bb3bae0b1b97e2"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/aannoo/hcom/releases/download/v0.7.22/hcom-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "f8f954b46f41db0cb168c1e706b60c745381bda058ad9f4a9c60aef30b13d5f3"
+      url "https://github.com/aannoo/hcom/releases/download/v0.7.23/hcom-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "337c7f4eb457145c03fd43daebdfd82d1d2113c1bb39def4970c541c4e0c0596"
     end
   end
   license "MIT"
@@ -31,6 +31,7 @@ class Hcom < Formula
     "aarch64-unknown-linux-musl-dynamic": {},
     "aarch64-unknown-linux-musl-static":  {},
     "x86_64-apple-darwin":                {},
+    "x86_64-pc-windows-gnu":              {},
     "x86_64-unknown-linux-gnu":           {},
     "x86_64-unknown-linux-musl-dynamic":  {},
     "x86_64-unknown-linux-musl-static":   {},
