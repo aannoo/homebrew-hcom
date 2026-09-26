@@ -1,25 +1,25 @@
 class Hcom < Formula
   desc "Connect Claude Code, Gemini CLI, Codex, OpenCode, Kilo Code, Pi, Oh My Pi, Antigravity, Cursor, Kimi, and Copilot so agents can message, watch, and spawn each other across terminals"
   homepage "https://github.com/aannoo/hcom"
-  version "0.7.25"
+  version "0.7.26"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/aannoo/hcom/releases/download/v0.7.25/hcom-aarch64-apple-darwin.tar.gz"
-      sha256 "3216be24c6b02a1e33321e97270cccfa92e52cfa6127fc7991508065023ae067"
+      url "https://github.com/aannoo/hcom/releases/download/v0.7.26/hcom-aarch64-apple-darwin.tar.gz"
+      sha256 "8bc5d5255581592ea61b352ddd6adf7dbb8ddada0bcdad1c2004cd858d18dff6"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/aannoo/hcom/releases/download/v0.7.25/hcom-x86_64-apple-darwin.tar.gz"
-      sha256 "8cfcad9b6b3714f1682ca4e7ccd7890d8f32276d14f6727bed4625ffff0750ae"
+      url "https://github.com/aannoo/hcom/releases/download/v0.7.26/hcom-x86_64-apple-darwin.tar.gz"
+      sha256 "edda9cfb2f1480c1abe310b3529ed39404059f698111fcf9142273ef43f2a71e"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/aannoo/hcom/releases/download/v0.7.25/hcom-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "7204ec5b71f07b9c654723e134f3fe2ff08d2512a59b986852f1def9dbf80826"
+      url "https://github.com/aannoo/hcom/releases/download/v0.7.26/hcom-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "fad1135fb1e9faab4293ae74fcd4a8117e13760c236d0ab07ba74ed85090f781"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/aannoo/hcom/releases/download/v0.7.25/hcom-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "0de50d76445e4814dabd6322ccd776b4e7bab4c550bb52fc092457478da50364"
+      url "https://github.com/aannoo/hcom/releases/download/v0.7.26/hcom-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "fc56419e97bb063c8ec70e577c4144f1a073ff0d88d7d1fa903cc39b24117e91"
     end
   end
   license "MIT"
@@ -53,10 +53,18 @@ class Hcom < Formula
   end
 
   def install
-    bin.install "hcom" if OS.mac? && Hardware::CPU.arm?
-    bin.install "hcom" if OS.mac? && Hardware::CPU.intel?
-    bin.install "hcom" if OS.linux? && Hardware::CPU.arm?
-    bin.install "hcom" if OS.linux? && Hardware::CPU.intel?
+    if OS.mac? && Hardware::CPU.arm?
+      bin.install "hcom"
+    end
+    if OS.mac? && Hardware::CPU.intel?
+      bin.install "hcom"
+    end
+    if OS.linux? && Hardware::CPU.arm?
+      bin.install "hcom"
+    end
+    if OS.linux? && Hardware::CPU.intel?
+      bin.install "hcom"
+    end
 
     install_binary_aliases!
 
