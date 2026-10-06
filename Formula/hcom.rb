@@ -1,25 +1,25 @@
 class Hcom < Formula
-  desc "Connect Claude Code, Gemini CLI, Codex, OpenCode, Kilo Code, Pi, Oh My Pi, Antigravity, Cursor, Kimi, and Copilot so agents can message, watch, and spawn each other across terminals"
+  desc "Connect Claude Code, Gemini CLI, Codex, OpenCode, Kilo Code, Pi, Oh My Pi, Antigravity, Cursor, Kimi, Copilot, Qoder CLI, and Grok Build so agents can message, watch, and spawn each other across terminals"
   homepage "https://github.com/aannoo/hcom"
-  version "0.7.27"
+  version "0.7.28"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/aannoo/hcom/releases/download/v0.7.27/hcom-aarch64-apple-darwin.tar.gz"
-      sha256 "6b7a999cf39559b0ad58de26ba91037ccd58c85a4e51d51ef5d24b3e8e49c4ec"
+      url "https://github.com/aannoo/hcom/releases/download/v0.7.28/hcom-aarch64-apple-darwin.tar.gz"
+      sha256 "a5e03cc6389ba33a029767b4f13c249ea1263b88d526f92169eeb41d1748feb8"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/aannoo/hcom/releases/download/v0.7.27/hcom-x86_64-apple-darwin.tar.gz"
-      sha256 "489dbca315b4cba25961a5c4eef43341c75d6990fa003ae1bb165ca511f87767"
+      url "https://github.com/aannoo/hcom/releases/download/v0.7.28/hcom-x86_64-apple-darwin.tar.gz"
+      sha256 "cbb796af35ff98a23bb4c13621b9686b677649b6beaeb58aef71b5f85e590b10"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/aannoo/hcom/releases/download/v0.7.27/hcom-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "628ef746afdad75ed7338ff6bbe70c76e1c05e36bddd83ba1040570823cb7e38"
+      url "https://github.com/aannoo/hcom/releases/download/v0.7.28/hcom-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "e3d6a2aa62267c4a1a9440e2688ed21d17aed38096af9a9ae4316572e42235f8"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/aannoo/hcom/releases/download/v0.7.27/hcom-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "8ae97ff6fef63c637d66ddf882651aadd035bd74ae26c0787743869c20a5391d"
+      url "https://github.com/aannoo/hcom/releases/download/v0.7.28/hcom-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "55bb305d23ce5e18ca17ebd8e147c1b72ff625e6474b020264a6659423f597b4"
     end
   end
   license "MIT"
