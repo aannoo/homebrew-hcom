@@ -1,25 +1,25 @@
 class Hcom < Formula
   desc "Connect Claude Code, Gemini CLI, Codex, OpenCode, Kilo Code, Pi, Oh My Pi, Antigravity, Cursor, Kimi, Copilot, Qoder CLI, and Grok Build so agents can message, watch, and spawn each other across terminals"
   homepage "https://github.com/aannoo/hcom"
-  version "0.7.28"
+  version "0.7.29"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/aannoo/hcom/releases/download/v0.7.28/hcom-aarch64-apple-darwin.tar.gz"
-      sha256 "a5e03cc6389ba33a029767b4f13c249ea1263b88d526f92169eeb41d1748feb8"
+      url "https://github.com/aannoo/hcom/releases/download/v0.7.29/hcom-aarch64-apple-darwin.tar.gz"
+      sha256 "0787cb3e587ff8b245c05f2cb66331278314b717c809d9bfcd796d24ec9505f9"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/aannoo/hcom/releases/download/v0.7.28/hcom-x86_64-apple-darwin.tar.gz"
-      sha256 "cbb796af35ff98a23bb4c13621b9686b677649b6beaeb58aef71b5f85e590b10"
+      url "https://github.com/aannoo/hcom/releases/download/v0.7.29/hcom-x86_64-apple-darwin.tar.gz"
+      sha256 "49e7d80babecfb09463b8dbe5c4c3475777af40c3ffe3d48d9bbd97fad793c3d"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/aannoo/hcom/releases/download/v0.7.28/hcom-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "e3d6a2aa62267c4a1a9440e2688ed21d17aed38096af9a9ae4316572e42235f8"
+      url "https://github.com/aannoo/hcom/releases/download/v0.7.29/hcom-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "9129faea94faed75fe285e74ac2c2a9ad79443e93b3851ef4dd4cf7a961d158f"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/aannoo/hcom/releases/download/v0.7.28/hcom-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "55bb305d23ce5e18ca17ebd8e147c1b72ff625e6474b020264a6659423f597b4"
+      url "https://github.com/aannoo/hcom/releases/download/v0.7.29/hcom-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "3e773ea2ca705dbf116ab733b73ff963d0d595bce1e04b27e86d15e4b3ade32c"
     end
   end
   license "MIT"
